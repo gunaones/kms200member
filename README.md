@@ -1,4 +1,5 @@
-#KMS200 dev guide
+KMS200 dev guide
+==
 
 ###Prerequisites
 - nodejs

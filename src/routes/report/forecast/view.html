@@ -1,0 +1,44 @@
+<ol class="breadcrumb">
+	<li>
+		<a href="#"><i class="fa fa-home"></i> Home</a>
+	</li>
+	<li>
+		<a href="#report">Report</a>
+	</li>
+	<li class="active">Bonus Forecast</li>
+</ol>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><i class="fa fa-th"></i> Bonus Forecast</h3>
+	</div>
+	<div class="panel-body">
+		<div class="table-responsive">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr class="bg-primary">
+						<th>Tgl</th>
+						<th>Kiri Awal</th>
+						<th>Kanan Awal</th>
+						<th>Kiri Baru</th>
+						<th>Kanan Baru</th>
+						<th>Kiri Akhir</th>
+						<th>Kanan Akhir</th>
+						<th>Pasangan</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in data">
+						<td width="80" align="center">{{item.tgl}}</td>
+						<td width="80" align="center">{{item.ki1}}</td>
+						<td width="80" align="center">{{item.ka1}}</td>
+						<td width="80" align="center">{{item.ki2}}</td>
+						<td width="80" align="center">{{item.ka2}}</td>
+						<td width="80" align="center">{{item.ki3}}</td>
+						<td width="80" align="center">{{item.ka3}}</td>
+						<td width="80" align="center">{{item.pasangan}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,70 @@
+<ol class="breadcrumb">
+	<li>
+		<a href="#"><i class="fa fa-home"></i> Home</a>
+	</li>
+	<li>
+		<a href="#report">Report</a>
+	</li>
+	<li class="active">List Transfer Bonus</li>
+</ol>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><i class="fa fa-table"></i> List Transfer Bonus</h3>
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-md-2 col-lg-2">
+				<div class="input-group date">
+					<div class="input-group-addon">
+						<i class="fa fa-calendar"></i>
+					</div>
+					<input type="text" class="form-control pull-right datepicker">
+				</div>
+				
+			</div>
+			<div class="col-md-1 col-lg-1 text-center">
+				S/d
+			</div>
+			<div class="col-md-2 col-lg-2">
+				<div class="input-group date">
+					<div class="input-group-addon">
+						<i class="fa fa-calendar"></i>
+					</div>
+					<input type="text" class="form-control pull-right datepicker">
+				</div>
+				
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr class="bg-primary">
+						<th>Tanggal</th>
+						<th>No.Rekening</th>
+						<th>Pajak</th>
+						<th>Adm Bank</th>
+						<th>Jumlah</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in data">
+						<td>{{item.tgl}}</td>
+						<td>{{item.norek}}</td>
+						<td>{{item.pajak}}</td>
+						<td>{{item.admbank}}</td>
+						<td>{{item.jml}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.datepicker').datepicker({
+	      autoclose: true,
+	      format: "dd/mm/yyyy"
+	    });
+	});
+</script>    
